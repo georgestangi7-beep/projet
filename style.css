@@ -180,42 +180,7 @@ section {
     border-radius: 8px;
 }
 
-/* SKILLS */
-.skill {
-    max-width: 600px;
-    margin: 15px auto;
-    text-align: left;
-}
 
-.skill p {
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.bar {
-    height: 18px;
-    background: rgba(255,255,255,0.08);
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-.progress {
-    height: 100%;
-    border-radius: 20px;
-    text-align: right;
-    padding-right: 8px;
-    font-size: 11px;
-    font-weight: bold;
-    line-height: 18px;
-}
-
-/* SKILLS COLORS */
-.html { width: 90%; background: #e44d26; }
-.css { width: 85%; background: #264de4; }
-.js { width: 60%; background: #f7df1e; color: black; }
-.sql { width: 85%; background: #00758f; }
-.java { width: 65%; background: #b07219; }
-.python { width: 75%; background: #306998; }
 
 /* PROJECTS */
 .projects-subtitle {
@@ -418,4 +383,77 @@ footer {
     width: 100%;
     border-radius: 10px;
     margin-top: 15px;
+}
+/* ========================= */
+/* NOUVELLE SECTION SKILLS   */
+/* ========================= */
+
+/* ========================= */
+/* SKILLS VERSION CARDS      */
+/* ========================= */
+
+#skills {
+    text-align: center;
+}
+
+/* titres catégories */
+.category {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: var(--gold);
+}
+
+/* grille */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* carte */
+.skill-card {
+    width: 250px;
+    background: rgba(255,255,255,0.03);
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.08);
+    transition: 0.3s;
+}
+
+/* hover */
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--gold);
+}
+
+/* texte */
+.skill-card p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* pourcentage */
+.skill-card span {
+    color: var(--gold);
+    font-weight: bold;
+}
+
+/* barre */
+.skill-bar {
+    height: 6px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* progression */
+.skill-bar div {
+    height: 100%;
+    background: var(--gold);
+    border-radius: 10px;
 }
